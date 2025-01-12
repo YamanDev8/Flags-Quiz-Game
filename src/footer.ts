@@ -8,7 +8,7 @@ footer.style.display = "none";
 footer.innerHTML = `
   <div class="progress-bar">
     <div class="progress"></div>
-    <div class="progress-icon">🚗</div>
+    <div class="progress-icon">⛵</div>
   </div>
   <div class="question-counter">
 Questions <span id="answered-count">0</span>/<span id="total-questions">10</span>

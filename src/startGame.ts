@@ -1,7 +1,7 @@
 import {
   showNextQuestion,
   initializeAutoNextQuestion,
-} from "./nextQuestionLogic";
+} from "./randomizeQuestions";
 import { startTimer } from "./timer";
 
 // Function to start the game
@@ -23,7 +23,7 @@ export function handleStartGame(): void {
   console.log("🎉Game started!🎉");
   startTimer(); // Start the timer when the button is clicked
 
-  // Preload the first question data
+  // Load the first question data
   const radioButtons = document.querySelectorAll(
     'input[type="radio"]',
   ) as NodeListOf<HTMLInputElement>;

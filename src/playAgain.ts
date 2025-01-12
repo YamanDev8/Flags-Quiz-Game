@@ -2,8 +2,8 @@ import { resetClickCount } from "./gameStatus";
 import { resetTimer } from "./timer";
 // import { handleStartGame } from "./startGameButton&Logic";
 import { resetFooterProgress } from "./footer";
-import { resetQuestionGenerator } from "./nextQuestionLogic";
-import { resetRadioButton } from "./nextQuestionLogic";
+import { resetQuestionGenerator } from "./randomizeQuestions";
+import { resetRadioButton } from "./randomizeQuestions";
 import { resetScore } from "./result";
 
 // Function to restart the game quiz

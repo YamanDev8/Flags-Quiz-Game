@@ -1,8 +1,8 @@
 import { IQuestion, questions } from "./questionsData";
 import { updateFooterProgress, setTotalQuestions } from "./footer";
-import { validateAnswer } from "./answerValidation";
+import { validateAnswer } from "./answerValidator";
 import { stopTimer } from "./timer";
-import { handleEndGame } from "./finishGameLogic";
+import { handleEndGame } from "./finishGame";
 import { addPoints } from "./result";
 
 let currentQuestion: IQuestion | null = null;

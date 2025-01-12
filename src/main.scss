@@ -9,13 +9,16 @@
 }
 
 body {
-  // background-image: url("/images/background.png");
+  background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgb(141, 84, 195);
+
   height: 100vh;
   font-family: "Arial Narrow Bold", sans-serif;
+}
+.blur {
+  backdrop-filter: blur(5px);
 }
 
 section {
@@ -123,6 +126,18 @@ main {
 input[type="radio"] {
   display: none;
 }
+.start-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #ffffff91;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .game-over {
   display: none;
@@ -153,37 +168,34 @@ input[type="radio"] {
   justify-content: center;
   text-align: center;
   display: flex;
-  box-shadow: 1px 1px 6px 4px rgba(225, 198, 236, 0.6);
+  // box-shadow: 1px 1px 6px 4px rgba(231, 236, 198, 0.6);
   margin: auto;
   position: relative;
-  top: 20px;
+  top: 10px;
   border-radius: 10px;
-  border: #bc61e0 2px solid;
+  // border: #822525 2px solid;
   display: none;
-  background-color: #541559;
   font-family: "Orbitron", sans-serif;
-  color: #e1bfeb;
+  color: #9d5304;
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   padding: 2px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .welcome {
   position: relative;
-  top: 45vh;
+  top: 5vh;
   padding: 20px;
   margin: auto;
   width: 100vw;
-  background-color: #ed9dec;
-  color: #fff;
+  color: #371414;
 }
 
 .start-game-btn {
   display: block;
   margin: auto;
   position: relative;
-  top: 50%;
   padding: 8px;
   font-size: 1rem;
   max-width: 200px;
@@ -211,7 +223,9 @@ input[type="radio"] {
 
 .question {
   display: none;
-  color: rgb(5, 5, 5);
+  font-weight: bold;
+  color: rgb(72, 28, 28);
+  background-color: #a2caa3c1;
 }
 
 .flag {
@@ -239,24 +253,26 @@ input[type="radio"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  box-shadow: 0 0 4px 2px rgba(248, 246, 246, 0.405);
 }
 
 .progress-bar {
   position: relative;
   height: 20px;
-  background-color: yellow;
+  background-color: rgb(5, 180, 239);
   border-radius: 10px;
+  margin: 5px 0;
   overflow: hidden;
-  margin-right: 10px;
-  border: 2px solid #a1d895;
+  border: #d5ec9e 1px solid;
 }
 
 .progress {
   position: absolute;
   height: 100%;
   width: 0%;
-  background-color: green;
-  transition: width 0.5s ease;
+  background-color: rgb(219, 190, 0);
+  z-index: 1;
+  transition: width 0.8s ease;
 }
 
 .progress-icon {
@@ -264,9 +280,9 @@ input[type="radio"] {
   top: 50%;
   left: 0%;
   transform: translate(-50%, -50%) scaleX(-1);
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
   transform-origin: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   z-index: 1;
 }
 
