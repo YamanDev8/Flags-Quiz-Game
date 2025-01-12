@@ -1,0 +1,30 @@
+@media screen and (max-width: 767px) {
+  .answer-quiz {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+  }
+
+  .timer {
+    width: 90px;
+  }
+
+  .question {
+    font-size: 1.5rem;
+  }
+
+  .game-over {
+    height: 40vh;
+  }
+
+  .flag-image {
+    max-width: 290px;
+  }
+  .progress-bar {
+    width: 75%;
+  }
+}
