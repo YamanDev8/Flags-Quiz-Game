@@ -1,7 +1,7 @@
 import "./main.scss";
-import { restartGame } from "./playAgainLogic";
-import { createStartGameButton } from "./startGameButtonLogic";
-import { initializeAutoNextQuestion } from "./nextQuestionLogic";
+import { restartGame } from "./playAgain";
+import { createStartGameButton } from "./startGame";
+import { initializeAutoNextQuestion } from "./randomizeQuestions";
 import { updateScoreContainer } from "./result";
 import { setupLabelKeyboardEvents } from "./a11y";
 
@@ -14,10 +14,12 @@ const radioButtons = document.querySelectorAll(
 initializeAutoNextQuestion(radioButtons);
 
 //================================================================================================
-// Add the "Start Game" button to the document
-
-const startGameButton = createStartGameButton();
-document.body.appendChild(startGameButton);
+// Add the "Start Game" button to the start section
+const startSection = document.getElementById("start-section");
+if (startSection) {
+  const startGameButton = createStartGameButton();
+  startSection.appendChild(startGameButton);
+}
 
 //================================================================================================
 // Add event listener to the "Play Again" button
